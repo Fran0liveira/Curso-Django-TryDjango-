@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<h1>About</h1>
+	<p>This is a template</p>
+
+	<p>{{ my_text }}, {{ my_number }}</p>
+	<p>{{ my_list }}</p>
+
+	<ol>
+		{% for my_sub_item in my_list %}
+			<li>{{ my_sub_item }}</li>
+		{% endfor %}
+	</ol>
+
+{% endblock %}
+
+
+
+
+{% block content2 %}
+	<h1>Bloco de número 2 da pagina about </h1>
+{% endblock %}
+
